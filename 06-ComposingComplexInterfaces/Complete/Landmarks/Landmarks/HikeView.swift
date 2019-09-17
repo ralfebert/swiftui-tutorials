@@ -55,7 +55,6 @@ struct HikeView: View {
     }
 }
 
-#if DEBUG
 struct HikeView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
@@ -65,4 +64,3 @@ struct HikeView_Previews: PreviewProvider {
         }
     }
 }
-#endif

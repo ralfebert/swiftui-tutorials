@@ -10,11 +10,12 @@ import SwiftUI
 struct ProfileSummary: View {
     var profile: Profile
     
-    static var goalFormat: DateFormatter {
+    static let goalFormat: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM d, yyyy"
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
         return formatter
-    }
+    }()
     
     var body: some View {
         List {
@@ -33,10 +34,6 @@ struct ProfileSummary: View {
                     .font(.headline)
                 ScrollView {
                     HStack {
-                        Text("Completed Badges")
-                            .italic()
-                        
-                        /*
                         HikeBadge(name: "First Hike")
                         
                         HikeBadge(name: "Earth Day")
@@ -45,7 +42,6 @@ struct ProfileSummary: View {
                         HikeBadge(name: "Tenth Hike")
                             .grayscale(0.5)
                             .hueRotation(Angle(degrees: 45))
-                        */
                     }
                 }
                 .frame(height: 140)
@@ -61,10 +57,8 @@ struct ProfileSummary: View {
     }
 }
 
-#if DEBUG
 struct ProfileSummary_Previews: PreviewProvider {
     static var previews: some View {
         ProfileSummary(profile: Profile.default)
     }
 }
-#endif

@@ -86,9 +86,9 @@
 		B7D587BB229F82EB006E8DCF /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		B7D587BD229F82FF006E8DCF /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		B7D587BF229F830B006E8DCF /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
-		C2C5D4E0C2C5D41000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		C4384A80C4387DF000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		C4E4AAA0C4E4035000000001 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D8B6FD10D8B6FC1000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		D8BCFE40D8BCF8F000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				C4E4AAA0C4E4035000000001 /* README.md */,
 				B7394864229F194000C47603 /* Landmarks */,
 				B7394863229F194000C47603 /* Products */,
-				C2C5D7A0C2C5D05000000001 /* Configuration */,
-				C2DB90F0C2DB5DF000000001 /* LICENSE */,
+				D8B69F70D8B6F81000000001 /* Configuration */,
+				D8BD2F40D8BD255000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,18 +198,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C2C5D7A0C2C5D05000000001 /* Configuration */ = {
+		D8B69F70D8B6F81000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				C2C5D4E0C2C5D41000000001 /* SampleCode.xcconfig */,
+				D8B6FD10D8B6FC1000000001 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		C2DB90F0C2DB5DF000000001 /* LICENSE */ = {
+		D8BD2F40D8BD255000000001 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
-				C4384A80C4387DF000000001 /* LICENSE.txt */,
+				D8BCFE40D8BCF8F000000001 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = ../LICENSE;
@@ -340,7 +340,7 @@
 /* Begin XCBuildConfiguration section */
 		B7394874229F194200C47603 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2C5D4E0C2C5D41000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D8B6FD10D8B6FC1000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -401,7 +401,7 @@
 		};
 		B7394875229F194200C47603 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2C5D4E0C2C5D41000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D8B6FD10D8B6FC1000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -456,7 +456,7 @@
 		};
 		B7394877229F194200C47603 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2C5D4E0C2C5D41000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D8B6FD10D8B6FC1000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,7 +478,7 @@
 		};
 		B7394878229F194200C47603 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2C5D4E0C2C5D41000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = D8B6FD10D8B6FC1000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

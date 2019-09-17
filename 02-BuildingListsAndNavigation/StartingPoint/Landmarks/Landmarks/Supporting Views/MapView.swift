@@ -22,10 +22,8 @@ struct MapView: UIViewRepresentable {
     }
 }
 
-#if DEBUG
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
     }
 }
-#endif
