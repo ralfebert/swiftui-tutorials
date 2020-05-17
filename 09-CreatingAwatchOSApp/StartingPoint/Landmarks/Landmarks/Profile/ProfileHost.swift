@@ -44,6 +44,6 @@ struct ProfileHost: View {
 
 struct ProfileHost_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileHost()
+        ProfileHost().environmentObject(UserData())
     }
 }

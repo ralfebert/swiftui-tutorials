@@ -28,27 +28,27 @@ struct ProfileEditor: View {
                 Text("Enable Notifications")
             }
             
-//            VStack(alignment: .leading, spacing: 20) {
-//                Text("Seasonal Photo").bold()
-//
-//                Picker(selection: $profile.seasonalPhoto) {
-//                    ForEach(Profile.Season.allCases, id: \.self) { season in
-//                        Text(season.rawValue).tag(season)
-//                    }
-//                }
-//                .pickerStyle(SegmentedPickerStyle())
-//            }
-//            .padding(.top)
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Seasonal Photo").bold()
+                
+                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
+                    ForEach(Profile.Season.allCases, id: \.self) { season in
+                        Text(season.rawValue).tag(season)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            .padding(.top)
             
-//            VStack(alignment: .leading, spacing: 20) {
-//                Text("Goal Date").bold()
-//                DatePicker(
-//                    "Goal Date",
-//                    selection: $profile.goalDate,
-//                    in: dateRange,
-//                    displayedComponents: .date)
-//            }
-//            .padding(.top)
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Goal Date").bold()
+                DatePicker(
+                    "Goal Date",
+                    selection: $profile.goalDate,
+                    in: dateRange,
+                    displayedComponents: .date)
+            }
+            .padding(.top)
         }
     }
 }
@@ -58,4 +58,3 @@ struct ProfileEditor_Previews: PreviewProvider {
         ProfileEditor(profile: .constant(.default))
     }
 }
-

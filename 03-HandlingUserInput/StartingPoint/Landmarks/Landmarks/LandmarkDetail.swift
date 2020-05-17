@@ -13,6 +13,7 @@ struct LandmarkDetail: View {
     var body: some View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
+                .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
 
             CircleImage(image: landmark.image)
@@ -35,7 +36,7 @@ struct LandmarkDetail: View {
 
             Spacer()
         }
-        .navigationBarTitle(Text(verbatim: landmark.name), displayMode: .inline)
+        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
     }
 }
 
